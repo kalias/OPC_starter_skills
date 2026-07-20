@@ -1,5 +1,6 @@
 ---
 name: validate-idea
+part: mindset
 description: 用极简创业者的框架验证一个生意想法。当用户有一个生意想法、想在动手做任何东西之前测试它是否值得投入时使用。
 ---
 

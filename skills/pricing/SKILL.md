@@ -1,5 +1,6 @@
 ---
 name: pricing
+part: mindset
 description: 用极简创业者的原则帮产品或服务定价。当用户在定价、考虑调价、或不知道该收多少时使用。
 ---
 

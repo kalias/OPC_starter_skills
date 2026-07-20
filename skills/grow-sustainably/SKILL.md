@@ -1,5 +1,6 @@
 ---
 name: grow-sustainably
+part: mindset
 description: 用「可持续、盈利优先」的视角评估商业决策。当用户在做花费、招聘、融资、或扩张的决策时使用。
 ---
 

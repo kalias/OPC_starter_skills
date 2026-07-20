@@ -1,5 +1,6 @@
 ---
 name: find-community
+part: mindset
 description: 帮你识别和评估「值得为之创业的社区」。当用户在找创业方向、寻找自己的社区、或不知道从哪里开始创业时使用。
 ---
 

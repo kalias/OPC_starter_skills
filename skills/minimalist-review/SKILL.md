@@ -1,5 +1,6 @@
 ---
 name: minimalist-review
+part: mindset
 description: 用极简创业者的视角，审视任何商业决策、计划或战略。当用户想对某个商业决策做直觉校验、想简化自己的做法、或在几个选项之间做选择时使用。
 argument-hint: [描述你的决策或情境]
 ---

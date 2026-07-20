@@ -1,5 +1,6 @@
 ---
 name: processize
+part: mindset
 description: 把一个产品想法转成一个可以「今天就开始手动交付」的流程。当用户有一个想法、想在写任何代码之前用手工方式交付价值时使用。
 ---
 

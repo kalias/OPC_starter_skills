@@ -1,20 +1,21 @@
-# 极简创业者 — Claude Code 技能（中文本地化版）
+# OPC Starter Skills — 一人公司起步技能集（中文本地化版）
 
-基于 Sahil Lavingia 所著《The Minimalist Entrepreneur（极简创业者）》的 Claude Code 技能集，已做中文本地化。
+一套为「AI 时代的独立开发者 / 一人公司」准备的 Claude Code 技能集，**分两部分**：
+
+- **Part 1 · Mindset（极简创业者 · 哲学）** — 10 个技能，源自 Sahil Lavingia《The Minimalist Entrepreneur》，回答「该不该做、怎么开始」。
+- **Part 2 · Playbook（AI 一人公司 · 打法）** — 7 个技能，源自实操拆解，回答「用 AI 具体怎么做」。
+
+两部分**互补不重叠**：Mindset 讲心态与哲学，Playbook 讲可复制的 vibe coding 打法。可以独立使用，也可以串成完整链路。
 
 > 📖 **English README: [/README.en.md](./README.en.md)**
-
-> **原项目**：[slavingia/skills](https://github.com/slavingia/skills)（英文版）
-> **作者背景**：Sahil Lavingia，17 岁辍学进 Pinterest 当首位设计师，19 岁一个周末做出 Gumroad。这本书讲的就是「先社区、先验证、先手动交付、第一天就收费」的极简创业方法论。
-> **本仓库**：忠实保留原书理论与 Gumroad 原创案例，工具/平台/渠道/案例做国内化适配。
 
 ---
 
 ## 它是什么
 
-把《极简创业者》这本书拆成 **10 个可调用的 Claude Code 技能**。每个技能是一个会提问、会给结论的「创业顾问」，对应书里创业旅程的一个阶段。
+把两份高质量内容（《极简创业者》原书 + AI 一人公司实操拆解）蒸馏成 **17 个可调用的 Claude Code 技能**。每个技能都是一个会提问、会给结论的「顾问 / 教练」，对应创业旅程的一个阶段。
 
-它不是「读完书自己理解」，而是「装上就能用 AI 按书里的框架逼你回答」。
+它不是「读完书自己理解」，而是「装上就能让 AI 按框架逼你回答」。
 
 ## 安装
 
@@ -23,65 +24,107 @@
 在 Claude Code 会话里：
 
 ```
-/plugin marketplace add slavingia/skills
+/plugin marketplace add kalias/OPC_starter_skills
 /plugin install minimalist-entrepreneur
 ```
-
-（原英文版的安装命令；要装中文版，先 fork 这个目录到自己的仓库，再 `/plugin marketplace add <你的用户名>/<仓库名>`。）
 
 ### 方式 B：本地克隆
 
 ```bash
-# 把本目录克隆到 Claude 插件目录
-git clone <你的仓库地址> ~/.claude/plugins/zai-skills-zh
+git clone git@github.com:kalias/OPC_starter_skills.git ~/.claude/plugins/opc-starter-skills
 ```
 
 然后在 Claude Code 里：
 
 ```
-/plugin marketplace add ~/.claude/plugins/zai-skills-zh
+/plugin marketplace add ~/.claude/plugins/opc-starter-skills
 /plugin install minimalist-entrepreneur
 ```
 
 ### 方式 C：直接当提示词用（不装插件）
 
-每个技能本质上就是 `skills/<名字>/SKILL.md` 一个 Markdown 文件。直接把它丢给 Claude/ChatGPT/任何 LLM，让它扮演那个「顾问」，效果一样。
+每个技能本质就是 `skills/<名字>/SKILL.md` 一个 Markdown 文件。直接把它丢给任意 LLM，让它扮演那个「顾问」，效果一样。
+
+> **结构说明**：所有技能物理上平铺在 `skills/` 下（这是 Claude Code 插件加载器的约定，只扫一层 `skills/<name>/SKILL.md`）。分区通过 frontmatter 的 `part: mindset|playbook` 字段实现，README 按此分区展示。
 
 ---
 
-## 10 个技能
+## Part 1 · Mindset（极简创业者 · 哲学）
+
+源自 Sahil Lavingia《The Minimalist Entrepreneur》。回答「要不要做、怎么开始」。顺序本身就是反直觉的方法论——**从社区开始，而不是从产品想法开始**。
 
 | 技能 | 命令 | 什么时候用 |
 |-------|---------|-------------|
 | **找社区** | `/find-community` | 在找创业方向、找你的社区 |
-| **验证想法** | `/validate-idea` | 在测试一个想法值不值得做 |
-| **MVP** | `/mvp` | 准备做第一个产品、或在功能范围上挣扎 |
-| **流程化** | `/processize` | 有产品想法，想在写代码前先手动交付价值 |
+| **验证想法** | `/validate-idea` | 测试一个想法值不值得做 |
+| **MVP** | `/mvp` | 准备做第一个产品、或在范围上挣扎 |
+| **流程化** | `/processize` | 想在写代码前先手动交付价值 |
 | **前 100 个客户** | `/first-customers` | 有产品了，要找头 100 个客户 |
 | **定价** | `/pricing` | 在定价、或考虑调价 |
-| **营销方案** | `/marketing-plan` | 已有产品-市场契合，准备用内容放大 |
-| **可持续增长** | `/grow-sustainably` | 在做花费、招聘、融资、扩张的决策 |
-| **公司价值观** | `/company-values` | 在定义文化、准备招聘 |
+| **营销方案** | `/marketing-plan` | 已有 PMF（约 100 客户），用内容放大 |
+| **可持续增长** | `/grow-sustainably` | 在做花费/招聘/融资/扩张决策 |
+| **公司价值观** | `/company-values` | 定义文化、准备招聘 |
 | **极简复盘** | `/minimalist-review` | 对任何商业决策做直觉校验 |
+
+**核心**：别先想「做什么产品」，先想「我是谁的朋友、他们痛在哪」。能手动为几个人解决，才有资格自动化。
 
 ---
 
-## 极简创业者之旅
+## Part 2 · Playbook（AI 一人公司 · 打法）
 
-技能顺序本身就是方法论——它和大多数人「想法 → 建产品 → 找客户」的直觉**相反**：
+源自实操拆解。回答「用 AI 怎么干」。核心理念：**文件夹即公司、技能即员工、做一次就技能化它**。
 
-1. **社区** — 从「找到你的人」开始
-2. **验证** — 确认问题值得解决
-3. **构建** — 先交付手动流程，再产品化
-4. **流程化** — 把产品想法转成今天就能手动交付的流程
-5. **销售** — 一个一个地拿下 100 个客户
-6. **定价** — 从第一天就收费
-7. **营销** — 用内容建立受众
-8. **增长** — 保持盈利、可持续扩张
-9. **文化** — 建一座你想住的房子
-10. **复盘** — 把极简原则用在每一个决策上
+| 技能 | 命令 | 什么时候用 |
+|-------|---------|-------------|
+| **搭建 AI 操作系统** | `/setup-ai-os` | 刚开始用 AI 做独立开发，20 分钟搭好公司 |
+| **构建任何东西** | `/build-anything` | 想做新产品、面对复杂项目不知从哪下手 |
+| **技能化** | `/skillify` | 刚做完一个项目，想沉淀成永久可复用资产 |
+| **自然获客引擎** | `/organic-engine` | 有产品没客户，想用内容让客户主动找你 |
+| **冷触达引擎** | `/cold-outreach-engine` | 想搭一台「睡觉时也在干活」的获客管道 |
+| **医生成交法** | `/doctor-selling` | 拿到线索但不会成交、丢单 |
+| **交付与扩张** | `/deliver-and-scale` | 拿下客户要交付，或想从单次升级到月费/系统 |
 
-**反直觉核心**：别先想「做什么产品」，先想「我是谁的朋友、他们痛在哪」。能手动为几个人解决，才有资格自动化。
+**核心**：一个人公司的 IP 不是代码，是 SOP / 技能文件夹。每做两遍的事，就变成一个技能。
+
+---
+
+## 两部分怎么串起来用（完整链路）
+
+```
+[Part 1 · 想清楚]                [Part 2 · 用 AI 干]
+/find-community  →  /validate-idea
+        │                 │
+        ▼                 ▼
+                    /setup-ai-os   ← 搭好公司
+                          │
+        ┌─────────────────┼─────────────────┐
+        ▼                 ▼                 ▼
+   /processize       /mvp              /build-anything
+   (手动跑通)        (最小产品)         (真的做出来)
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          ▼
+                     /skillify   ← 沉淀成永久资产
+                          │
+        ┌─────────────────┼─────────────────┐
+        ▼                 ▼                 ▼
+  /organic-engine  /cold-outreach    /first-customers
+  (主动获客)       (被动获客)         (手动卖)
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          ▼
+                  /doctor-selling  ← 拿下通话
+                          │
+                          ▼
+                  /deliver-and-scale ← 交付 L1/L2/L3
+                          │
+                          ▼
+              /pricing · /marketing-plan · /grow-sustainably
+              (定价 · 放大 · 可持续)
+                          │
+                          ▼
+                  /minimalist-review  ← 每个决策都复盘
+```
 
 ---
 
@@ -96,22 +139,26 @@ git clone <你的仓库地址> ~/.claude/plugins/zai-skills-zh
 | 案例 | Nordstrom 接受轮胎退货 | 海底捞服务神话（同种「故事化价值观」） |
 | 货币 | 美元 | 注释换算人民币，关键数字保留原值参考 |
 | 语气 | 逼问式 | 保留（这是这套技能的力量来源） |
-| frontmatter | 英文 | `name` 保留英文（插件加载依赖），`description` 译成中文 |
+| frontmatter | 英文 | `name`/`part` 保留英文（加载器依赖），`description` 译成中文 |
 
 ---
 
 ## 用法建议（性价比最高）
 
-1. **不必全装**——多数人卡在 `validate-idea` 和 `pricing`，挑你纠结的阶段调用即可。
-2. **每个技能都逼你回答具体问题**（「你能说出 10 个具体的有这个问题的人吗？」），别糊弄，它的价值就在这。
-3. **想要 fork**：直接改 Markdown，结构是 10 个 `SKILL.md`，没有任何代码依赖。
+1. **不必全装**——多数人卡在 `validate-idea`（该不该做）和 `build-anything`（怎么用 AI 做），挑你纠结的阶段调用。
+2. **每个技能都逼你回答具体问题**，别糊弄，它的价值就在这。
+3. **两部分可以分开用**：只想要哲学就用 Part 1，只想要打法就用 Part 2。
+4. **想要 fork**：直接改 Markdown，结构是 17 个 `SKILL.md`，零代码依赖。
 
 ---
 
-## 致谢
+## 致谢与版权
 
+**Part 1 (Mindset)** 的方法论与原创案例版权归原作者：
 - 原作者：[Sahil Lavingia](https://sahillavingia.com/)
 - 原仓库：[slavingia/skills](https://github.com/slavingia/skills)
 - 原书：[The Minimalist Entrepreneur](https://www.minimalistentrepreneur.com/)
 
-本中文版仅为学习与本地化用途，方法论与原创案例版权归 Sahil Lavingia 所有。
+**Part 2 (Playbook)** 的打法源自公开实操拆解文的本地化重写。
+
+本中文版仅为学习与本地化用途。完整的版权声明见 [LICENSE](./LICENSE)：原作者内容保留所有权利，我们的翻译与本地化增量内容采用 MIT。

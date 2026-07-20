@@ -1,5 +1,6 @@
 ---
 name: company-values
+part: mindset
 description: 帮一个极简生意定义公司价值观和文化。当用户在搭建公司文化、准备招聘、或想把公司主张什么给固化下来时使用。
 ---
 

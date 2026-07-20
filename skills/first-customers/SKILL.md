@@ -1,5 +1,6 @@
 ---
 name: first-customers
+part: mindset
 description: 用极简创业者的打法，制定卖出前 100 个客户的策略。当用户有了产品要找客户、或在早期销售上挣扎时使用。
 ---
 
