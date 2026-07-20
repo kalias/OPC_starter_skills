@@ -1,5 +1,9 @@
 # OPC Starter Skills — One-Person-Company Starter Skills (Chinese-Localized)
 
+[![Docs](https://img.shields.io/badge/📚_docs-GitHub_Pages-42b983?style=for-the-badge)](https://kalias.github.io/OPC_starter_skills/)
+[![Repo](https://img.shields.io/badge/📦_repo-kalias/OPC__starter__skills-181717?style=for-the-badge&logo=github)](https://github.com/kalias/OPC_starter_skills)
+[![License](https://img.shields.io/badge/📜_license-MIT_(additions)_||_All_Rights_Reserved_(original)-blue?style=for-the-badge)](./LICENSE)
+
 A Claude Code skills collection for indie developers / one-person-companies in the AI era, **organized in two parts**:
 
 - **Part 1 · Mindset (The Minimalist Entrepreneur · Philosophy)** — 10 skills adapted from Sahil Lavingia's *The Minimalist Entrepreneur*. Answers "should I do this, and how do I start?"

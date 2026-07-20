@@ -1,5 +1,9 @@
 # OPC Starter Skills — 一人公司起步技能集（中文本地化版）
 
+[![在线文档](https://img.shields.io/badge/📚_在线文档-GitHub_Pages-42b983?style=for-the-badge)](https://kalias.github.io/OPC_starter_skills/)
+[![GitHub 仓库](https://img.shields.io/badge/📦_仓库-kalias/OPC__starter__skills-181717?style=for-the-badge&logo=github)](https://github.com/kalias/OPC_starter_skills)
+[![License](https://img.shields.io/badge/📜_许可-MIT_(增量)_||_All_Rights_Reserved_(原作者)-blue?style=for-the-badge)](./LICENSE)
+
 一套为「AI 时代的独立开发者 / 一人公司」准备的 Claude Code 技能集，**分两部分**：
 
 - **Part 1 · Mindset（极简创业者 · 哲学）** — 10 个技能，源自 Sahil Lavingia《The Minimalist Entrepreneur》，回答「该不该做、怎么开始」。
