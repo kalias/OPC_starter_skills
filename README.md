@@ -2,6 +2,8 @@
 
 基于 Sahil Lavingia 所著《The Minimalist Entrepreneur（极简创业者）》的 Claude Code 技能集，已做中文本地化。
 
+> 📖 **English README: [/README.en.md](./README.en.md)**
+
 > **原项目**：[slavingia/skills](https://github.com/slavingia/skills)（英文版）
 > **作者背景**：Sahil Lavingia，17 岁辍学进 Pinterest 当首位设计师，19 岁一个周末做出 Gumroad。这本书讲的就是「先社区、先验证、先手动交付、第一天就收费」的极简创业方法论。
 > **本仓库**：忠实保留原书理论与 Gumroad 原创案例，工具/平台/渠道/案例做国内化适配。
